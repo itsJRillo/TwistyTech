@@ -16,7 +16,7 @@ const Header = () => {
             <Image
               width={400}
               height={100}
-              src="/Logo White.png"
+              src="/img/logo.svg"
               alt="imagen-logo"
             />
           </a>
@@ -36,7 +36,7 @@ const Header = () => {
             layout="fixed"
             width={500}
             height={1200}
-            src="/img/header_guitarra.png"
+            src="/img/header_cube.svg"
             alt="imagen header"
           />
         </div>

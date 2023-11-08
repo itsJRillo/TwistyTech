@@ -4,9 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap");
 
 :root {
-  --primary: #e99401;
-  --negro: #262626;
-  --blanco: #fff;
+  --primario: #f5f5e2;
+  --secundario: #4c3e8f;
+  --terciario: #df1d70;
+  --cuaternario: #fba45c;
   --fuente-principal: "Outfit", sans-serif;
 }
 
@@ -55,6 +56,6 @@ img {
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
-  color: var(--primary);
+  color: var(--cuaternario);
   margin: 5rem 0;
 }

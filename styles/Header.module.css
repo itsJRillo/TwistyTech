@@ -4,7 +4,7 @@
       rgb(0 0 0 / 0.8),
       rgb(0 0 0 / 0.7)
     ),
-    url(../public/cube.jpg);
+    url(../public/img/cube.jpg);
   background-position: 50%;
   background-size: cover;
   padding: 5rem 0;
@@ -39,7 +39,7 @@
 }
 
 .navegacion a {
-  color: var(--blanco);
+  color: var(--primario);
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 700;
@@ -50,7 +50,7 @@
 }
 
 .navegacion a:hover {
-  background-color: var(--primary);
+  background-color: var(--secundario);
 }
 
 .modelo {
@@ -80,7 +80,7 @@
 .precio {
   font-size: 6rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--primario);
   margin: 0;
 }
 
@@ -93,13 +93,13 @@
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--blanco);
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primario);
   padding: 1rem 5rem;
   transition: 0.3s;
 }
 
 .enlace:hover {
-  background-color: var(--primary);
+  background-color: var(--primario);
   color: var(--blanco);
 }
 
