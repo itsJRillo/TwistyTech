@@ -2,7 +2,7 @@ import Layout from '../../components/Layout';
 import Heading from '../../components/Heading';
 import ListadoCubos from '../../components/ListadoCubos';
 
-export default async function Home({cubos}) {
+export default async function Home() {
   const data = await getData()
   return (
     <Layout pagina="Inicio">
