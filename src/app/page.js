@@ -1,26 +1,22 @@
 import Layout from '../../components/Layout';
 import Heading from '../../components/Heading';
 import ListadoCubos from '../../components/ListadoCubos';
+import ListadoBlogs from '../../components/ListadoBlogs';
+import { getData } from './utils';
 
 export default async function Home() {
-  const data = await getData()
+  const cubosData = await getData("cubes?populate=*&pagination[pageSize]=3")
+  const entradasData = await getData("blogs?populate=*&pagination[pageSize]=2")
+  
   return (
     <Layout pagina="Inicio">
       <main className='contenedor'>
         <Heading title="Nuestra Colección"/>
-        <ListadoCubos cubos={data}/>
+        <ListadoCubos cubos={cubosData}/>
       </main>
+
+      <ListadoBlogs entradas={entradasData}/>
     </Layout>
   )
 }
 
-async function getData() {
-  const urlCubos = "http://localhost:1337/api/cubes?populate=display_image&price";
-  const resCubos = await fetch(urlCubos);
-
-  if (!resCubos.ok) {
-    throw new Error('Failed to fetch data')
-  }
- 
-  return resCubos.json()
-}
